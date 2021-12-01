@@ -19,7 +19,7 @@ In this project, we attempt to predict gene essentiality in *Saccharomyces cerev
 
 ## Materials and Methods
 
-We collect the structural files from AlphaFold (https://alphafold.ebi.ac.uk/download). In addition, we collect esential gene data for yeast from the DEG as well as all coding sequences from Ensemble. We subtract the essential genes from all coding sequences to generate the non-essential dataset. Also, due to naming convention differences between the dataset from DEG/Ensembl and AlphaFold, we downloaded the entire coding sequence genome from Uniprot and cross-referenced the names that way (raw_data/yeast_uniprot_proteins.fasta).
+We collect the structural files from AlphaFold (https://alphafold.ebi.ac.uk/download). In addition, we collect esential gene data for yeast from the DEG as well as all coding sequences from Ensembl. We subtract the essential genes from all coding sequences to generate the non-essential dataset. Also, due to naming convention differences between the dataset from DEG/Ensembl and AlphaFold, we downloaded the entire coding sequence genome from Uniprot and cross-referenced the names that way (raw_data/yeast_uniprot_proteins.fasta).
 
 Following the paper "Prediction of protein function using a deep convolutional neural network ensemble" by Zacharaki [1], We format the structural data to psi and phi angles using a biopython function. Then, we create contact maps from these angles (using pre-defined bin sizes, 19x19, and 23 channels, 1 for every amino acid plus UNK for Unknown).
 
