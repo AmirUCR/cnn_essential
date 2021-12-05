@@ -37,4 +37,4 @@ We achieve an AU-ROC of 0.61 and an AU-PRC of 0.30. We speculate the results can
 ## References and Acknowledgements
 [1] Zacharaki EI. 2017. Prediction of protein function using a deep convolutional neural network ensemble. *PeerJ Computer Science* 3:e124 https://doi.org/10.7717/peerj-cs.124
 
-Special thanks for professor LePendu for being such an instructive teacher and a kind person.
+Special thanks for professor LePendu for a fun and educational class.
