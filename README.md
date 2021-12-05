@@ -34,6 +34,10 @@ We testing on 1007 total examples. 235 positive examples (essential), 772 negati
 
 We achieve an AU-ROC of 0.61 and an AU-PRC of 0.30. We speculate the results can be improved by tuning the hyperparameters of the CNN via grid-search.
 
+## Challenges
+The most time-consuming part of this project was bringing all the datasets together and then cleaning, cross-referencing, and ultimately processing them. If we had more time, we would have implemented a grid-search cross-validator to select for the best hyperparameters to improve the performance of our classifier. We also did not address the natural class imbalance present in our datasets (the ratio of essential genes to non-essential ones is about 1 to 5). To address this, we would either use downsampling, or assign class weights. The downside of the former is that we would lose a significant portion of our data which is extremely detrimental to the ML algortithm given that we are already dealing with a small number of training examples. Assigning class weights would work for this project, however, when applied to a different organism, these weights would not represent the actual distribution of the unknown essential genes.
+
+
 ## References and Acknowledgements
 [1] Zacharaki EI. 2017. Prediction of protein function using a deep convolutional neural network ensemble. *PeerJ Computer Science* 3:e124 https://doi.org/10.7717/peerj-cs.124
 
